@@ -27,6 +27,37 @@ function Signup() {
         }
     }
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/createuser", {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify({
+  //         name: credentials.name,
+  //         email: credentials.email,
+  //         password: credentials.password,
+  //         location: credentials.geolocation
+  //       })
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error('Failed to create user');
+  //     }
+  
+  //     const json = await response.json();
+  //     console.log(json);
+  
+  //     if (!json.success) {
+  //       alert("Enter Valid Credentials");
+  //     }
+  //   } catch (error) {
+  //     console.error('Error creating user:', error);
+  //     // Handle error here, e.g., show a user-friendly error message
+  //     alert("Failed to create user. Please try again later.");
+  //   }
+  // }
+  
 
     const onChange=async(event)=>{
         setcredentials({...credentials,[event.target.name]:event.target.value})

@@ -2,7 +2,7 @@ import React,{createContext,useReducer,useContext} from 'react'
 
 const CartStateContext=createContext()
 const CartDispatchContext=createContext()
-
+    
 const reducer=(state,action)=>{
 switch(action.type){
     case "ADD":
