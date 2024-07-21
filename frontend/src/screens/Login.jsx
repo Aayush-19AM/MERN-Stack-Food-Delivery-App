@@ -12,7 +12,7 @@ function Login() {
    console.log(JSON.stringify({email:credentials.email,password:credentials.password})
    )
        e.preventDefault();
-       const response=await fetch("http://localhost:3000/api/loginuser",{
+       const response=await fetch("https://fooddeliverybackend-5-1jty.onrender.com/api/loginuser",{
            method:'POST',
            headers:{'Content-Type':'application/json'
   },
@@ -58,7 +58,12 @@ function Login() {
           <button type="submit" className="m-3 btn btn-primary">Submit</button>
           <Link to='/createuser' className="m-3 btn btn-danger">New User</Link>
           </form>
+
+          <p>Username: email@gmail.com</p>
+          <p>Password:123456</p>
             </div>
+
+         
 
     </div>
   )

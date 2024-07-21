@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
 
+// localurl: http://localhost:3000/
 
 function Signup() {
 
@@ -11,11 +12,11 @@ function Signup() {
     console.log(JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.geolocation})
     )
         e.preventDefault();
-        const response=await fetch("http://localhost:3000/api/createuser",{
+        const response=await fetch("https://fooddeliverybackend-5-1jty.onrender.com/api/createuser",{
             method:'POST',
             headers:{'Content-Type':'application/json'
-   },
-   body:JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.geolocation})
+                                                         },
+            body:JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.geolocation})
 
         });
 

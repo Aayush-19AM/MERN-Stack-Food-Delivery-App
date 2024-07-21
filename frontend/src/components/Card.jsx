@@ -12,7 +12,6 @@ function Card(props) {
   const [size, setSize] = useState('')
   // let foodItem=props.foodItems;  no need of this bcoz we r using props.foodItem directly
 
-
   const handleAddtoCart=async()=>{
 
     let food=[]

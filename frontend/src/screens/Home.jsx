@@ -190,6 +190,8 @@
 //   );
 // }
 
+// https://source.unsplash.com/random/900x700/?pastry
+
 // export default Home;
 
 import React, { useState, useEffect } from "react";
@@ -204,7 +206,7 @@ function Home() {
 
   const loadData = async () => {
     try {
-      let response = await fetch("http://localhost:3000/api/foodData", {
+      let response = await fetch("https://fooddeliverybackend-5-1jty.onrender.com/api/foodData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -236,13 +238,13 @@ function Home() {
             </div>
           </div>
           <div className="carousel-item active">
-            <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
+            <img src="https://cdn.pixabay.com/photo/2023/03/05/11/02/burger-7831128_640.jpg" className="d-block w-100" style={{ filter: "brightness(30%)",objectFit: "cover",height:"100%"}} alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="https://source.unsplash.com/random/900x700/?pizza" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
+            <img src="https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="https://source.unsplash.com/random/900x700/?pastry" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfA6GXa0E0PebyCGD65CS_XWUsaq3tYAzKQ&s" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

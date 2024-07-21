@@ -72,9 +72,6 @@
 //           <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Check Out </button>
 //         </div>
 //       </div>
-
-
-
 //     </div>
 //   )
 // }
@@ -91,7 +88,7 @@ export default function Cart() {
   const handleCheckOut = async () => {
     try {
       let userEmail = localStorage.getItem("userEmail");
-      let response = await fetch("http://localhost:3000/api/orders", {
+      let response = await fetch("https://fooddeliverybackend-5-1jty.onrender.com/api/orders", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -155,9 +152,9 @@ export default function Cart() {
             </tbody>
           </table>
           <div><h1 className='fs-2'>Total Price: {totalPrice}/-</h1></div>
-          <div>
+          {/* <div>
             <button className='btn bg-success mt-5' onClick={handleCheckOut}>Check Out</button>
-          </div>
+          </div> */}
         </div>
       )}
     </div>

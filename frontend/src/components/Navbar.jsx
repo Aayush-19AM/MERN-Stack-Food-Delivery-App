@@ -31,7 +31,9 @@ let data=useCart();
             <li className="nav-item">
               <Link className="nav-link active fs-5 text-white" aria-current="page" to="/" >Home</Link>
             </li>
-            
+            <li className="nav-item">
+              <Link className="nav-link active fs-5 text-white" aria-current="page" to="/AboutUs" >About Us</Link>
+            </li>
             {/* <li className="nav-item">
               <Link className="nav-link" to="/AboutUs">AboutUs</Link>
             </li>  */}
